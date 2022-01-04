@@ -15,8 +15,8 @@ console.log(WebSocket);
 
 // Yes, TLS is required
 const serverConfig = {
-  key: fs.readFileSync('key.pem'),
-  cert: fs.readFileSync('cert.pem'),
+  key: fs.readFileSync('https://jiujiu-blue.github.io/webRTC/key.pem'),
+  cert: fs.readFileSync('https://jiujiu-blue.github.io/webRTC/cert.pem'),
 };
 
 // ----------------------------------------------------------------------------------------
