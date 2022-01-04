@@ -26,13 +26,13 @@ const handleRequest = function (request, response) {
   // Render the single client html file for any request the HTTP server receives
   console.log('request received: ' + request.url);
 
-  if (request.url === '/webrtc.js') {
+  if (request.url === 'https://jiujiu-blue.github.io/webRTC/client/webrtc.js') {
     response.writeHead(200, { 'Content-Type': 'application/javascript' });
     response.end(fs.readFileSync('https://jiujiu-blue.github.io/webRTC/client/webrtc.js'));
-  } else if (request.url === '/style.css') {
+  } else if (request.url === 'https://jiujiu-blue.github.io/webRTC/client/style.css') {
     response.writeHead(200, { 'Content-Type': 'text/css' });
     response.end(fs.readFileSync('https://jiujiu-blue.github.io/webRTC/client/style.css'));
-  }else if(request.url === '/index.html'){
+  }else if(request.url === 'https://jiujiu-blue.github.io/webRTC/client/index.html'){
     response.writeHead(200, { 'Content-Type': 'text/html' });
     response.end(fs.readFileSync('https://jiujiu-blue.github.io/webRTC/client/index.html'));
   }else {
